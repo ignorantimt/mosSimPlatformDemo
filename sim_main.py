@@ -6,8 +6,11 @@ from mainWindow import Ui_MainWindow
 
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtCore import QUrl
-from PyQt5.QtGui import QFont
-from PyQt5.QtWidgets import QLabel
+from PyQt5.QtGui import QPixmap, QImage
+# from PyQt5.QtWidgets import QLabel, QPushButton
+
+import cv2
+import numpy as np
 
 class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -22,16 +25,22 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.label_descrs = []
         self.loadCsv(f'./resource/labels.csv')
         self.label_descr.setText(self.label_descrs[0])
-        self.setLayoutStretch(self.verticalLayout, [1,0,6])
+        self.setLayoutStretch(self.verticalLayout, [1,6,0])
 
         self.operations = {
             1: self.playVideo, 
-            4: self.showPDF, 5: self.showPDF, 6: self.playVideo,
+            4: self.showPDF, 5: self.showPDF,
             7: self.showPDF, 9: self.playVideo,
             11: self.playVideo, 12: self.playVideo,
             14: self.playVideo, 15: self.playVideo,
             16: self.playVideo, 17: self.playVideo
         }
+
+        # Lab 6
+        self.pushButton_cv_code.clicked.connect(self.showCvCode)
+        self.pushButton_cv_1.clicked.connect(self.showCvIni)
+        self.showCvFlag = 0
+        self.pushButton_cv_2.clicked.connect(self.showCvContinue)
         
     def update_title(self, item):
         self.label_title.setText(item.text())
@@ -42,12 +51,15 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         index = self.listWidget.row(item)
         self.stackedWidget.setCurrentIndex(index)
         if index != 0:
-            self.setLayoutStretch(self.verticalLayout, [1,5,2])
+            self.setLayoutStretch(self.verticalLayout, [1,2,10])
             if index in self.operations:
                 operation = self.operations[index]
                 fileType = 'mp4' if operation == self.playVideo else 'pdf'
                 widget = getattr(self, f'widget_{index}')
                 operation(f'./resource/Lab{index}.{fileType}', widget)
+            elif index == 6:
+                self.showCvIni()
+            
         
     
     def showPDF(self, pdfPath, widget):
@@ -83,6 +95,34 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def handleMediaError(self):
         print("Media Player Error: ", self.videoPlayer.errorString())
+
+    def showCvCode(self):
+        self.showingStatusChange([self.label_cv_img],[self.textBrowser_cv_code])
+    
+    def showCvIni(self):
+        self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
+        cvImgPath = os.path.abspath('./resource/Lab6/ball_image.jpg')
+        pixmap = QPixmap(cvImgPath)
+        self.label_cv_img.setPixmap(pixmap)
+        self.label_cv_img.setScaledContents(True)
+
+        self.showCvFlag = 0
+
+    def showCvContinue(self):
+        self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
+        if self.showCvFlag == 0:
+            image_path = os.path.abspath('./resource/Lab6/ball_image_gray.jpg')
+        elif self.showCvFlag == 1:
+            image_path = os.path.abspath('./resource/Lab6/ball_image_median.jpg')
+        elif self.showCvFlag == 2:
+            image_path = os.path.abspath('./resource/Lab6/ball_image_detected.jpg')
+        elif self.showCvFlag == 3:
+            image_path = os.path.abspath('./resource/Lab6/ball_image.jpg')
+        pixmap = QPixmap(image_path)
+        self.label_cv_img.setPixmap(pixmap)
+        self.label_cv_img.setScaledContents(True)
+
+        self.showCvFlag = self.showCvFlag + 1 if self.showCvFlag < 3 else 0
 
 if __name__ == "__main__":
     import sys
