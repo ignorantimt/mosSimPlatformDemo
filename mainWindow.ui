@@ -210,7 +210,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_6">
-           <widget class="QWidget" name="widget_6" native="true">
+           <widget class="QVideoWidget" name="widget_6" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -222,7 +222,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_7">
-           <widget class="QWidget" name="widget_7" native="true">
+           <widget class="QWebEngineView" name="widget_7" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -234,7 +234,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_8">
-           <widget class="QWidget" name="widget_8" native="true">
+           <widget class="QVideoWidget" name="widget_8" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -258,7 +258,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_10">
-           <widget class="QWidget" name="widget_10" native="true">
+           <widget class="QVideoWidget" name="widget_10" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -270,7 +270,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_11">
-           <widget class="QWidget" name="widget_11" native="true">
+           <widget class="QVideoWidget" name="widget_11" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -282,7 +282,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_12">
-           <widget class="QWidget" name="widget_12" native="true">
+           <widget class="QVideoWidget" name="widget_12" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -294,7 +294,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_13">
-           <widget class="QWidget" name="widget_13" native="true">
+           <widget class="QVideoWidget" name="widget_13" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -306,7 +306,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_14">
-           <widget class="QWidget" name="widget_14" native="true">
+           <widget class="QVideoWidget" name="widget_14" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -318,7 +318,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_15">
-           <widget class="QWidget" name="widget_15" native="true">
+           <widget class="QVideoWidget" name="widget_15" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -330,7 +330,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_16">
-           <widget class="QWidget" name="widget_16" native="true">
+           <widget class="QVideoWidget" name="widget_16" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
@@ -342,7 +342,7 @@
            </widget>
           </widget>
           <widget class="QWidget" name="page_17">
-           <widget class="QWidget" name="widget_17" native="true">
+           <widget class="QVideoWidget" name="widget_17" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>

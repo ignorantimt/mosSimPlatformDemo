@@ -40,17 +40,15 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def switch_stacked_widget_page(self, item):
         index = self.listWidget.row(item)
+        self.stackedWidget.setCurrentIndex(index)
         if index != 0:
             self.setLayoutStretch(self.verticalLayout, [1,5,2])
-        self.stackedWidget.setCurrentIndex(index)
-        if index == 1:
-            self.playVideo(f'./resource/Lab{index}.mp4', getattr(self, f'widget_{index}'))
-        elif index == 4:
-            self.showPDF(f'./resource/Lab{index}.pdf', self.widget_4)
-        elif index == 5:
-            self.showPDF(f'./resource/Lab{index}.pdf', self.widget_5)
-        elif index == 9:
-            self.playVideo(f'./resource/Lab{index}.mp4', self.widget_9)
+            if index in self.operations:
+                operation = self.operations[index]
+                fileType = 'mp4' if operation == self.playVideo else 'pdf'
+                widget = getattr(self, f'widget_{index}')
+                operation(f'./resource/Lab{index}.{fileType}', widget)
+        
     
     def showPDF(self, pdfPath, widget):
         pdfPath = os.path.abspath(pdfPath)
@@ -60,6 +58,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         widget.show()
 
     def playVideo(self, videoPath, widget):
+        videoPath = os.path.abspath(videoPath)
         self.videoPlayer.setVideoOutput(widget)
         self.videoPlayer.setMedia(QMediaContent(QUrl.fromLocalFile(videoPath)))
         self.videoPlayer.play()
@@ -70,7 +69,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             next(csvReader)
             for row in csvReader:
                 self.label_descrs.append(row[1])
-                print(row[1])
+                # print(row[1])
 
     def setLayoutStretch(self, layout, stretchList):
         for index, sL in enumerate(stretchList):
