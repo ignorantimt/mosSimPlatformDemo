@@ -6,11 +6,8 @@ from mainWindow import Ui_MainWindow
 
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
 from PyQt5.QtCore import QUrl
-from PyQt5.QtGui import QPixmap, QImage
+from PyQt5.QtGui import QPixmap
 # from PyQt5.QtWidgets import QLabel, QPushButton
-
-import cv2
-import numpy as np
 
 class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
