@@ -186,13 +186,71 @@
              <rect>
               <x>10</x>
               <y>10</y>
-              <width>961</width>
+              <width>1021</width>
               <height>541</height>
              </rect>
             </property>
             <property name="autoFillBackground">
              <bool>false</bool>
             </property>
+            <widget class="QWidget" name="verticalLayoutWidget_2">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>70</y>
+               <width>981</width>
+               <height>441</height>
+              </rect>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_7" stretch="2,5">
+              <item>
+               <widget class="QLabel" name="label_lab2_qs">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="1,10">
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_8">
+                  <item>
+                   <widget class="QPushButton" name="pushButton_py_code">
+                    <property name="text">
+                     <string>编写代码</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_py_res">
+                    <property name="text">
+                     <string>查看结果</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QPushButton" name="pushButton_py_next">
+                    <property name="text">
+                     <string>下一题</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_py">
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
            </widget>
           </widget>
           <widget class="QWidget" name="page_3">
@@ -272,7 +330,7 @@
               <rect>
                <x>10</x>
                <y>10</y>
-               <width>931</width>
+               <width>1011</width>
                <height>501</height>
               </rect>
              </property>
