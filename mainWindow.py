@@ -14,8 +14,8 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1520, 960)
-        MainWindow.setStyleSheet("font: 12pt \"Times New Roman\";")
+        MainWindow.resize(1520, 817)
+        MainWindow.setStyleSheet("font: 10pt \"Times New Roman\";")
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.centralwidget)
@@ -65,17 +65,70 @@ class Ui_MainWindow(object):
         self.verticalLayout = QtWidgets.QVBoxLayout()
         self.verticalLayout.setSpacing(6)
         self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.label_19 = QtWidgets.QLabel(self.centralwidget)
+        self.label_19.setMinimumSize(QtCore.QSize(40, 90))
+        self.label_19.setMaximumSize(QtCore.QSize(40, 90))
+        self.label_19.setText("")
+        self.label_19.setObjectName("label_19")
+        self.horizontalLayout_11.addWidget(self.label_19)
+        self.label_20 = QtWidgets.QLabel(self.centralwidget)
+        self.label_20.setMinimumSize(QtCore.QSize(90, 90))
+        self.label_20.setMaximumSize(QtCore.QSize(90, 90))
+        self.label_20.setText("")
+        self.label_20.setObjectName("label_20")
+        self.horizontalLayout_11.addWidget(self.label_20)
+        self.label_21 = QtWidgets.QLabel(self.centralwidget)
+        self.label_21.setMinimumSize(QtCore.QSize(90, 90))
+        self.label_21.setMaximumSize(QtCore.QSize(90, 90))
+        self.label_21.setText("")
+        self.label_21.setObjectName("label_21")
+        self.horizontalLayout_11.addWidget(self.label_21)
+        self.verticalLayout_14 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_14.setObjectName("verticalLayout_14")
+        self.label_17 = QtWidgets.QLabel(self.centralwidget)
+        self.label_17.setText("")
+        self.label_17.setObjectName("label_17")
+        self.verticalLayout_14.addWidget(self.label_17)
         self.label_title = QtWidgets.QLabel(self.centralwidget)
         font = QtGui.QFont()
         font.setFamily("Times New Roman")
-        font.setPointSize(12)
+        font.setPointSize(10)
         font.setBold(False)
         font.setItalic(False)
         font.setWeight(50)
         self.label_title.setFont(font)
         self.label_title.setAlignment(QtCore.Qt.AlignCenter)
         self.label_title.setObjectName("label_title")
-        self.verticalLayout.addWidget(self.label_title)
+        self.verticalLayout_14.addWidget(self.label_title)
+        self.label_18 = QtWidgets.QLabel(self.centralwidget)
+        self.label_18.setText("")
+        self.label_18.setObjectName("label_18")
+        self.verticalLayout_14.addWidget(self.label_18)
+        self.verticalLayout_14.setStretch(0, 1)
+        self.verticalLayout_14.setStretch(1, 1)
+        self.verticalLayout_14.setStretch(2, 1)
+        self.horizontalLayout_11.addLayout(self.verticalLayout_14)
+        self.label_MOS = QtWidgets.QLabel(self.centralwidget)
+        self.label_MOS.setMinimumSize(QtCore.QSize(90, 90))
+        self.label_MOS.setMaximumSize(QtCore.QSize(90, 90))
+        self.label_MOS.setText("")
+        self.label_MOS.setObjectName("label_MOS")
+        self.horizontalLayout_11.addWidget(self.label_MOS)
+        self.label_THU = QtWidgets.QLabel(self.centralwidget)
+        self.label_THU.setMinimumSize(QtCore.QSize(90, 90))
+        self.label_THU.setMaximumSize(QtCore.QSize(90, 90))
+        self.label_THU.setText("")
+        self.label_THU.setObjectName("label_THU")
+        self.horizontalLayout_11.addWidget(self.label_THU)
+        self.label_22 = QtWidgets.QLabel(self.centralwidget)
+        self.label_22.setMinimumSize(QtCore.QSize(40, 90))
+        self.label_22.setMaximumSize(QtCore.QSize(40, 90))
+        self.label_22.setText("")
+        self.label_22.setObjectName("label_22")
+        self.horizontalLayout_11.addWidget(self.label_22)
+        self.verticalLayout.addLayout(self.horizontalLayout_11)
         self.label_descr = QtWidgets.QLabel(self.centralwidget)
         self.label_descr.setMaximumSize(QtCore.QSize(1000, 16777215))
         self.label_descr.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
@@ -83,11 +136,30 @@ class Ui_MainWindow(object):
         self.label_descr.setObjectName("label_descr")
         self.verticalLayout.addWidget(self.label_descr)
         self.stackedWidget = QtWidgets.QStackedWidget(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.stackedWidget.setFont(font)
         self.stackedWidget.setObjectName("stackedWidget")
         self.page = QtWidgets.QWidget()
         self.page.setObjectName("page")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.page)
         self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label_depend = QtWidgets.QLabel(self.page)
+        font = QtGui.QFont()
+        font.setFamily("Times New Roman")
+        font.setPointSize(10)
+        font.setBold(False)
+        font.setItalic(False)
+        font.setWeight(50)
+        self.label_depend.setFont(font)
+        self.label_depend.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignTop)
+        self.label_depend.setWordWrap(True)
+        self.label_depend.setObjectName("label_depend")
+        self.horizontalLayout.addWidget(self.label_depend)
         self.stackedWidget.addWidget(self.page)
         self.page_1 = QtWidgets.QWidget()
         self.page_1.setObjectName("page_1")
@@ -330,9 +402,58 @@ class Ui_MainWindow(object):
         self.stackedWidget.addWidget(self.page_12)
         self.page_13 = QtWidgets.QWidget()
         self.page_13.setObjectName("page_13")
-        self.openGLWidget_pybullet = QtWidgets.QOpenGLWidget(self.page_13)
-        self.openGLWidget_pybullet.setGeometry(QtCore.QRect(10, 10, 961, 541))
-        self.openGLWidget_pybullet.setObjectName("openGLWidget_pybullet")
+        self.widget = QtWidgets.QWidget(self.page_13)
+        self.widget.setGeometry(QtCore.QRect(10, 10, 1021, 541))
+        self.widget.setObjectName("widget")
+        self.label_11 = QtWidgets.QLabel(self.widget)
+        self.label_11.setGeometry(QtCore.QRect(30, 20, 911, 41))
+        self.label_11.setObjectName("label_11")
+        self.horizontalLayoutWidget_4 = QtWidgets.QWidget(self.widget)
+        self.horizontalLayoutWidget_4.setGeometry(QtCore.QRect(30, 69, 391, 221))
+        self.horizontalLayoutWidget_4.setObjectName("horizontalLayoutWidget_4")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_4)
+        self.horizontalLayout_9.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.verticalLayout_11 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_11.setObjectName("verticalLayout_11")
+        self.label_12 = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
+        self.label_12.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_12.setObjectName("label_12")
+        self.verticalLayout_11.addWidget(self.label_12)
+        self.label_13 = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
+        self.label_13.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_13.setObjectName("label_13")
+        self.verticalLayout_11.addWidget(self.label_13)
+        self.label_14 = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
+        self.label_14.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_14.setObjectName("label_14")
+        self.verticalLayout_11.addWidget(self.label_14)
+        self.label_15 = QtWidgets.QLabel(self.horizontalLayoutWidget_4)
+        self.label_15.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_15.setObjectName("label_15")
+        self.verticalLayout_11.addWidget(self.label_15)
+        self.horizontalLayout_9.addLayout(self.verticalLayout_11)
+        self.verticalLayout_12 = QtWidgets.QVBoxLayout()
+        self.verticalLayout_12.setObjectName("verticalLayout_12")
+        self.doubleSpinBox_1 = QtWidgets.QDoubleSpinBox(self.horizontalLayoutWidget_4)
+        self.doubleSpinBox_1.setObjectName("doubleSpinBox_1")
+        self.verticalLayout_12.addWidget(self.doubleSpinBox_1)
+        self.doubleSpinBox_2 = QtWidgets.QDoubleSpinBox(self.horizontalLayoutWidget_4)
+        self.doubleSpinBox_2.setProperty("value", 1.0)
+        self.doubleSpinBox_2.setObjectName("doubleSpinBox_2")
+        self.verticalLayout_12.addWidget(self.doubleSpinBox_2)
+        self.doubleSpinBox_3 = QtWidgets.QDoubleSpinBox(self.horizontalLayoutWidget_4)
+        self.doubleSpinBox_3.setObjectName("doubleSpinBox_3")
+        self.verticalLayout_12.addWidget(self.doubleSpinBox_3)
+        self.doubleSpinBox_4 = QtWidgets.QDoubleSpinBox(self.horizontalLayoutWidget_4)
+        self.doubleSpinBox_4.setObjectName("doubleSpinBox_4")
+        self.verticalLayout_12.addWidget(self.doubleSpinBox_4)
+        self.horizontalLayout_9.addLayout(self.verticalLayout_12)
+        self.horizontalLayout_9.setStretch(0, 5)
+        self.horizontalLayout_9.setStretch(1, 2)
+        self.pushButton_run_sim = QtWidgets.QPushButton(self.widget)
+        self.pushButton_run_sim.setGeometry(QtCore.QRect(40, 330, 75, 23))
+        self.pushButton_run_sim.setObjectName("pushButton_run_sim")
         self.stackedWidget.addWidget(self.page_13)
         self.page_14 = QtWidgets.QWidget()
         self.page_14.setObjectName("page_14")
@@ -359,7 +480,6 @@ class Ui_MainWindow(object):
         self.widget_17.setObjectName("widget_17")
         self.stackedWidget.addWidget(self.page_17)
         self.verticalLayout.addWidget(self.stackedWidget)
-        self.verticalLayout.setStretch(0, 1)
         self.verticalLayout.setStretch(2, 5)
         self.horizontalLayout_3.addLayout(self.verticalLayout)
         self.horizontalLayout_3.setStretch(0, 2)
@@ -367,7 +487,7 @@ class Ui_MainWindow(object):
         self.horizontalLayout_2.addLayout(self.horizontalLayout_3)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 1520, 24))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1520, 21))
         self.menubar.setObjectName("menubar")
         self.menu = QtWidgets.QMenu(self.menubar)
         self.menu.setObjectName("menu")
@@ -424,6 +544,7 @@ class Ui_MainWindow(object):
         self.listWidget.setSortingEnabled(__sortingEnabled)
         self.label_title.setText(_translate("MainWindow", "介绍"))
         self.label_descr.setText(_translate("MainWindow", "TextLabel"))
+        self.label_depend.setText(_translate("MainWindow", "首次运行请点击depends文件夹下的K-Lite_Codec_Pack_1805_Basic安装依赖,否则部分页面会缺少内容。"))
         self.pushButton_py_code.setText(_translate("MainWindow", "编写代码"))
         self.pushButton_py_res.setText(_translate("MainWindow", "查看结果"))
         self.pushButton_py_next.setText(_translate("MainWindow", "下一题"))
@@ -448,31 +569,37 @@ class Ui_MainWindow(object):
         self.textBrowser_cv_code.setHtml(_translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:12pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#ffffff;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">def</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#5e2cbc;\">ball_detect_demo</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">():</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    img </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> cv.imread(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">\'ball_image.jpg\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">\'Original Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, img)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    gray </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> cv.cvtColor(img, cv.COLOR_BGRA2GRAY)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">\'Grayscale Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, gray)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    img2 </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> cv.medianBlur(gray, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">19</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)  </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#515151;\"># 进行中值模糊，去噪点</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">\'Median Blur Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, img2)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    circles </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> cv.HoughCircles(img2, cv.HOUGH_GRADIENT, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">50</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#001080;\">param1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">100</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#001080;\">param2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">30</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#001080;\">minRadius</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#001080;\">maxRadius</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    circles </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> np.uint16(np.around(circles))</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#5e2cbc;\">print</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">(circles)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"><br /></span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#b5200d;\">for</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> i </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#b5200d;\">in</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"> circles[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, :]:  </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#515151;\"># 遍历矩阵每一行的数据</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">        cv.circle(img, (i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">], i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">]), i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">], (</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">255</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">        cv.circle(img, (i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">], i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">]), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, (</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">255</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">3</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\"><br /><br /></span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#0f4a85;\">\'Detected Balls\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">,img)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">)</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:14px; color:#292929;\">    cv.destroyAllWindows()</span></p></body></html>"))
+"</style></head><body style=\" font-family:\'Times New Roman\'; font-size:10pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#ffffff;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">def</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#5e2cbc;\">ball_detect_demo</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">():</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    img </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> cv.imread(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">\'ball_image.jpg\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">\'Original Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, img)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    gray </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> cv.cvtColor(img, cv.COLOR_BGRA2GRAY)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">\'Grayscale Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, gray)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    img2 </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> cv.medianBlur(gray, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">19</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)  </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#515151;\"># 进行中值模糊，去噪点</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">\'Median Blur Image\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, img2)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    circles </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> cv.HoughCircles(img2, cv.HOUGH_GRADIENT, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">50</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#001080;\">param1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">100</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#001080;\">param2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">30</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#001080;\">minRadius</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#001080;\">maxRadius</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    circles </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#000000;\">=</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> np.uint16(np.around(circles))</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#5e2cbc;\">print</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">(circles)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#b5200d;\">for</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> i </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#b5200d;\">in</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"> circles[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, :]:  </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#515151;\"># 遍历矩阵每一行的数据</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">        cv.circle(img, (i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">], i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">]), i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">], (</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">255</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">        cv.circle(img, (i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">], i[</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">1</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">]), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">2</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, (</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">, </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">255</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">), </span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">3</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\"><br /><br /></span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.imshow(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#0f4a85;\">\'Detected Balls\'</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">,img)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.waitKey(</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#096d48;\">0</span><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">)</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:\'Consolas\',\'Courier New\',\'monospace\'; font-size:12pt; color:#292929;\">    cv.destroyAllWindows()</span></p></body></html>"))
         self.pushButton_pf_code.setText(_translate("MainWindow", "编写代码"))
         self.pushButton_pf_res.setText(_translate("MainWindow", "查看结果"))
         self.pushButton_pf_grade.setText(_translate("MainWindow", "查看成绩"))
+        self.label_11.setText(_translate("MainWindow", "修改参数后点击“开始运行”查看效果，仿真延迟系数为0时最流畅"))
+        self.label_12.setText(_translate("MainWindow", "仿真延迟系数"))
+        self.label_13.setText(_translate("MainWindow", "目标x位置[m]"))
+        self.label_14.setText(_translate("MainWindow", "目标y位置[m]"))
+        self.label_15.setText(_translate("MainWindow", "目标θ位置[rad]"))
+        self.pushButton_run_sim.setText(_translate("MainWindow", "开始运行"))
         self.menu.setTitle(_translate("MainWindow", "仿人足球机器人课程"))
 from PyQt5 import QtWebEngineWidgets
 from PyQt5.QtMultimediaWidgets import QVideoWidget

@@ -7,14 +7,14 @@
     <x>0</x>
     <y>0</y>
     <width>1520</width>
-    <height>960</height>
+    <height>817</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">font: 12pt &quot;Times New Roman&quot;;</string>
+   <string notr="true">font: 10pt &quot;Times New Roman&quot;;</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -118,28 +118,164 @@
        </widget>
       </item>
       <item>
-       <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0,5">
+       <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,5">
         <property name="spacing">
          <number>6</number>
         </property>
         <item>
-         <widget class="QLabel" name="label_title">
-          <property name="font">
-           <font>
-            <family>Times New Roman</family>
-            <pointsize>12</pointsize>
-            <weight>50</weight>
-            <italic>false</italic>
-            <bold>false</bold>
-           </font>
-          </property>
-          <property name="text">
-           <string>介绍</string>
-          </property>
-          <property name="alignment">
-           <set>Qt::AlignCenter</set>
-          </property>
-         </widget>
+         <layout class="QHBoxLayout" name="horizontalLayout_11">
+          <item>
+           <widget class="QLabel" name="label_19">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_20">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_21">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_14" stretch="1,1,1">
+            <item>
+             <widget class="QLabel" name="label_17">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_title">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>10</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>介绍</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_18">
+              <property name="text">
+               <string/>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_MOS">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_THU">
+            <property name="minimumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>90</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_22">
+            <property name="minimumSize">
+             <size>
+              <width>40</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>40</width>
+              <height>90</height>
+             </size>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <widget class="QLabel" name="label_descr">
@@ -159,14 +295,46 @@
            <bool>true</bool>
           </property>
           <property name="margin">
-           <number>0</number>
+           <number>9</number>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QStackedWidget" name="stackedWidget">
+          <property name="font">
+           <font>
+            <family>Times New Roman</family>
+            <pointsize>10</pointsize>
+            <weight>50</weight>
+            <italic>false</italic>
+            <bold>false</bold>
+           </font>
+          </property>
           <widget class="QWidget" name="page">
-           <layout class="QHBoxLayout" name="horizontalLayout"/>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QLabel" name="label_depend">
+              <property name="font">
+               <font>
+                <family>Times New Roman</family>
+                <pointsize>10</pointsize>
+                <weight>50</weight>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>首次运行请点击depends文件夹下的K-Lite_Codec_Pack_1805_Basic安装依赖,否则部分页面会缺少内容。</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
           </widget>
           <widget class="QWidget" name="page_1">
            <widget class="QVideoWidget" name="widget_1" native="true">
@@ -520,28 +688,28 @@
               <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#5e2cbc;&quot;&gt;ball_detect_demo&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;():&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    img &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; cv.imread(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;'ball_image.jpg'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;'Original Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, img)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    gray &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; cv.cvtColor(img, cv.COLOR_BGRA2GRAY)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;'Grayscale Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, gray)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    img2 &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; cv.medianBlur(gray, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#515151;&quot;&gt;# 进行中值模糊，去噪点&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;'Median Blur Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, img2)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    circles &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; cv.HoughCircles(img2, cv.HOUGH_GRADIENT, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;50&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#001080;&quot;&gt;param1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;100&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#001080;&quot;&gt;param2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#001080;&quot;&gt;minRadius&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#001080;&quot;&gt;maxRadius&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    circles &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; np.uint16(np.around(circles))&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#5e2cbc;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;(circles)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#b5200d;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; i &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#b5200d;&quot;&gt;in&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt; circles[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, :]:  &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#515151;&quot;&gt;# 遍历矩阵每一行的数据&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;        cv.circle(img, (i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;], i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;]), i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;], (&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;255&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;        cv.circle(img, (i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;], i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;]), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, (&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;255&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#0f4a85;&quot;&gt;'Detected Balls'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;,img)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:14px; color:#292929;&quot;&gt;    cv.destroyAllWindows()&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Times New Roman'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:19px; background-color:#ffffff;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;def&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#5e2cbc;&quot;&gt;ball_detect_demo&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;():&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    img &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; cv.imread(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;'ball_image.jpg'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;'Original Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, img)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    gray &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; cv.cvtColor(img, cv.COLOR_BGRA2GRAY)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;'Grayscale Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, gray)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    img2 &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; cv.medianBlur(gray, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;19&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)  &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#515151;&quot;&gt;# 进行中值模糊，去噪点&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;'Median Blur Image'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, img2)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    circles &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; cv.HoughCircles(img2, cv.HOUGH_GRADIENT, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;50&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#001080;&quot;&gt;param1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;100&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#001080;&quot;&gt;param2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;30&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#001080;&quot;&gt;minRadius&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#001080;&quot;&gt;maxRadius&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    circles &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#000000;&quot;&gt;=&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; np.uint16(np.around(circles))&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#5e2cbc;&quot;&gt;print&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;(circles)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#b5200d;&quot;&gt;for&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; i &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#b5200d;&quot;&gt;in&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt; circles[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, :]:  &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#515151;&quot;&gt;# 遍历矩阵每一行的数据&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;        cv.circle(img, (i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;], i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;]), i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;], (&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;255&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;        cv.circle(img, (i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;], i[&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;1&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;]), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;2&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, (&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;, &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;255&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;), &lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;3&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.imshow(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#0f4a85;&quot;&gt;'Detected Balls'&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;,img)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.waitKey(&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#096d48;&quot;&gt;0&lt;/span&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Consolas','Courier New','monospace'; font-size:12pt; color:#292929;&quot;&gt;    cv.destroyAllWindows()&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
              </property>
             </widget>
            </widget>
@@ -680,15 +848,117 @@ p, li { white-space: pre-wrap; }
            </widget>
           </widget>
           <widget class="QWidget" name="page_13">
-           <widget class="QOpenGLWidget" name="openGLWidget_pybullet">
+           <widget class="QWidget" name="widget" native="true">
             <property name="geometry">
              <rect>
               <x>10</x>
               <y>10</y>
-              <width>961</width>
+              <width>1021</width>
               <height>541</height>
              </rect>
             </property>
+            <widget class="QLabel" name="label_11">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>20</y>
+               <width>911</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>修改参数后点击“开始运行”查看效果，仿真延迟系数为0时最流畅</string>
+             </property>
+            </widget>
+            <widget class="QWidget" name="horizontalLayoutWidget_4">
+             <property name="geometry">
+              <rect>
+               <x>30</x>
+               <y>69</y>
+               <width>391</width>
+               <height>221</height>
+              </rect>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="5,2">
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_11">
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="text">
+                   <string>仿真延迟系数</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_13">
+                  <property name="text">
+                   <string>目标x位置[m]</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_14">
+                  <property name="text">
+                   <string>目标y位置[m]</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QLabel" name="label_15">
+                  <property name="text">
+                   <string>目标θ位置[rad]</string>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QVBoxLayout" name="verticalLayout_12">
+                <item>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_1"/>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+                  <property name="value">
+                   <double>1.000000000000000</double>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_3"/>
+                </item>
+                <item>
+                 <widget class="QDoubleSpinBox" name="doubleSpinBox_4"/>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QPushButton" name="pushButton_run_sim">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>330</y>
+               <width>75</width>
+               <height>23</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>开始运行</string>
+             </property>
+            </widget>
            </widget>
           </widget>
           <widget class="QWidget" name="page_14">
@@ -753,7 +1023,7 @@ p, li { white-space: pre-wrap; }
      <x>0</x>
      <y>0</y>
      <width>1520</width>
-     <height>24</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">

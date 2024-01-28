@@ -26,6 +26,10 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.label_descr.setText(self.label_descrs[0])
         self.setLayoutStretch(self.verticalLayout, [1,6,0])
 
+        self.showPic('./resource/logo/MOS.png', self.label_MOS)
+        self.showPic('./resource/logo/THU.png', self.label_THU)
+        self.label_depend.setStyleSheet('color: red; font-weight: bold')
+
         self.operations = {
             1: self.playVideo, 
             4: self.showPDF, 5: self.showPDF,
@@ -57,6 +61,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_pf_res.clicked.connect(self.showPfRes)
 
         # Lab 13
+        self.pushButton_run_sim.clicked.connect(self.run_simulation)
         
         
     def update_title(self, item):
@@ -67,7 +72,9 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def switch_stacked_widget_page(self, item):
         index = self.listWidget.row(item)
         self.stackedWidget.setCurrentIndex(index)
-        if index != 0:
+        if index == 0:
+            self.setLayoutStretch(self.verticalLayout, [1,6,0])
+        else:
             self.setLayoutStretch(self.verticalLayout, [1,2,10])
             if index in self.operations:
                 operation = self.operations[index]
@@ -84,21 +91,20 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             elif index == 10:
                 self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
                 self.showPic('./resource/Lab10.png', self.label_lab10_img)
-            elif index == 13:
-                self.simulation_widget.stepSimulation()
                 
 
-    def showPic(self, picPath, widget):
+    def showPic(self, picPath, widget, scaled = True):
         ImgPath = os.path.abspath(picPath)
         pixmap = QPixmap(ImgPath)
         widget.setPixmap(pixmap)
-        widget.setScaledContents(True)
+        widget.setScaledContents(scaled)
         
     
     def showPDF(self, pdfPath, widget):
         pdfPath = os.path.abspath(pdfPath)
         se = widget.settings()
         se.setAttribute(QtWebEngineWidgets.QWebEngineSettings.PluginsEnabled, True)
+        # se.setAttribute(QtWebEngineWidgets.QWebEngineSettings.JavascriptCanOpenWindows, False)
         widget.load(QUrl.fromLocalFile(pdfPath))
         widget.show()
 
@@ -148,7 +154,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
     def showCvCode(self):
         self.showingStatusChange([self.label_cv_img],[self.textBrowser_cv_code])
-    
+
     def showCvIni(self):
         self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
         self.showPic('./resource/Lab6/ball_image.jpg', self.label_cv_img)
@@ -172,6 +178,16 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.showPic(f'./resource/Lab8/Code.jpg', self.label_pf)
     def showPfRes(self):
         self.showPic(f'./resource/Lab8/Result.jpg', self.label_pf)
+
+    def run_simulation(self):
+        # 当按钮被按下时，获取所有doubleSpinBox的值
+        speed_value = self.doubleSpinBox_1.value()
+        target_x_value = self.doubleSpinBox_2.value()
+        target_y_value = self.doubleSpinBox_3.value()
+        target_theta_value = self.doubleSpinBox_4.value()
+
+        # 调用walking_sim_demo函数，并传入收集的值
+        walking_sim_demo(speed_value, target_x_value, target_y_value, target_theta_value)
 
 if __name__ == "__main__":
     import sys
