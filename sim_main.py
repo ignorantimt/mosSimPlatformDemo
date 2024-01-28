@@ -33,6 +33,11 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             16: self.playVideo, 17: self.playVideo
         }
 
+        # Lab 3
+        for i in range(1, 6):
+            pb = getattr(self, f'pushButton_ubuntu_{i}')
+            pb.clicked.connect(lambda _, i=i: self.showUbuntu(i))
+
         # Lab 6
         self.pushButton_cv_code.clicked.connect(self.showCvCode)
         self.pushButton_cv_1.clicked.connect(self.showCvIni)
@@ -56,7 +61,16 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 operation(f'./resource/Lab{index}.{fileType}', widget)
             elif index == 6:
                 self.showCvIni()
-            
+            elif index == 10:
+                self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
+                self.showPic('./resource/Lab10.png')
+                
+
+    def showPic(self, picPath, widget):
+        ImgPath = os.path.abspath(picPath)
+        pixmap = QPixmap(ImgPath)
+        widget.setPixmap(pixmap)
+        widget.setScaledContents(True)
         
     
     def showPDF(self, pdfPath, widget):
@@ -93,32 +107,28 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def handleMediaError(self):
         print("Media Player Error: ", self.videoPlayer.errorString())
 
+    def showUbuntu(self, button_index):
+        self.playVideo(f'./resource/Lab3/{button_index}.mp4', self.widget_ubuntu)
+
     def showCvCode(self):
         self.showingStatusChange([self.label_cv_img],[self.textBrowser_cv_code])
     
     def showCvIni(self):
         self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
-        cvImgPath = os.path.abspath('./resource/Lab6/ball_image.jpg')
-        pixmap = QPixmap(cvImgPath)
-        self.label_cv_img.setPixmap(pixmap)
-        self.label_cv_img.setScaledContents(True)
-
+        self.showPic('./resource/Lab6/ball_image.jpg')
         self.showCvFlag = 0
 
     def showCvContinue(self):
         self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
         if self.showCvFlag == 0:
-            image_path = os.path.abspath('./resource/Lab6/ball_image_gray.jpg')
+            image_path = './resource/Lab6/ball_image_gray.jpg'
         elif self.showCvFlag == 1:
-            image_path = os.path.abspath('./resource/Lab6/ball_image_median.jpg')
+            image_path = './resource/Lab6/ball_image_median.jpg'
         elif self.showCvFlag == 2:
-            image_path = os.path.abspath('./resource/Lab6/ball_image_detected.jpg')
+            image_path = './resource/Lab6/ball_image_detected.jpg'
         elif self.showCvFlag == 3:
-            image_path = os.path.abspath('./resource/Lab6/ball_image.jpg')
-        pixmap = QPixmap(image_path)
-        self.label_cv_img.setPixmap(pixmap)
-        self.label_cv_img.setScaledContents(True)
-
+            image_path = './resource/Lab6/ball_image.jpg'
+        self.showPic(image_path)
         self.showCvFlag = self.showCvFlag + 1 if self.showCvFlag < 3 else 0
 
 if __name__ == "__main__":
