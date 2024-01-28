@@ -5,9 +5,11 @@ from PyQt5 import QtWidgets, QtWebEngineWidgets
 from mainWindow import Ui_MainWindow
 
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
-from PyQt5.QtCore import QUrl
+from PyQt5.QtCore import QUrl, QTimer
 from PyQt5.QtGui import QPixmap
-# from PyQt5.QtWidgets import QLabel, QPushButton
+from PyQt5.QtWidgets import QWidget
+
+from walking_sample import walking_sim_demo
 
 class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -37,7 +39,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.pushButton_py_code.clicked.connect(self.showPyCode)
         self.pushButton_py_res.clicked.connect(self.showPyRes)
         self.pushButton_py_next.clicked.connect(self.pyNext)
-        
+
         # Lab 3
         for i in range(1, 6):
             pb = getattr(self, f'pushButton_ubuntu_{i}')
@@ -49,6 +51,13 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.showCvFlag = 0
         self.pushButton_cv_2.clicked.connect(self.showCvContinue)
         self.pushButton_cv_2.setEnabled(False)
+
+        # Lab 8
+        self.pushButton_pf_code.clicked.connect(self.showPfCode)
+        self.pushButton_pf_res.clicked.connect(self.showPfRes)
+
+        # Lab 13
+        
         
     def update_title(self, item):
         self.label_title.setText(item.text())
@@ -75,6 +84,8 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             elif index == 10:
                 self.showingStatusChange([self.textBrowser_cv_code],[self.label_cv_img])
                 self.showPic('./resource/Lab10.png', self.label_lab10_img)
+            elif index == 13:
+                self.simulation_widget.stepSimulation()
                 
 
     def showPic(self, picPath, widget):
@@ -156,6 +167,11 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
             image_path = './resource/Lab6/ball_image.jpg'
         self.showPic(image_path, self.label_cv_img)
         self.showCvFlag = self.showCvFlag + 1 if self.showCvFlag < 3 else 0
+
+    def showPfCode(self):
+        self.showPic(f'./resource/Lab8/Code.jpg', self.label_pf)
+    def showPfRes(self):
+        self.showPic(f'./resource/Lab8/Result.jpg', self.label_pf)
 
 if __name__ == "__main__":
     import sys
