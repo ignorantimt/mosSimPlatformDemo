@@ -2,10 +2,8 @@
 # 
 # preview control
 
-import math
 import numpy as np
-import control
-import control.matlab
+from control import matlab, c2d, dare
 import csv
 
 class preview_control():
@@ -20,9 +18,9 @@ class preview_control():
     B = np.matrix([[0.0], [0.0], [1.0]])
     C = np.matrix([[1.0, 0.0, -z/G]])
     D = 0
-    sys = control.matlab.ss(A, B, C, D)
-    sys_d = control.c2d(sys, dt)
-    self.A_d, self.B_d, self.C_d, D_d = control.matlab.ssdata(sys_d)
+    sys = matlab.ss(A, B, C, D)
+    sys_d = c2d(sys, dt)
+    self.A_d, self.B_d, self.C_d, D_d = matlab.ssdata(sys_d)
     E_d = np.matrix([[dt], [1.0], [0.0]])
     Zero = np.matrix([[0.0], [0.0], [0.0]])
     Phai = np.block([[1.0, -self.C_d * self.A_d], [Zero, self.A_d]])
@@ -31,7 +29,7 @@ class preview_control():
     Gd = np.block([[-self.C_d*E_d], [E_d]])
     Qm = np.zeros((4,4))
     Qm[0][0] = Q
-    P = control.dare(Phai, G, Qm, H)[0]
+    P = dare(Phai, G, Qm, H)[0]
     self.F = -np.linalg.inv(H+G.transpose()*P*G)*G.transpose()*P*Phai
     xi = (np.eye(4)-G*np.linalg.inv(H+G.transpose()*P*G)*G.transpose()*P)*Phai
     self.f = []

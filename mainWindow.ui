@@ -7,8 +7,26 @@
     <x>0</x>
     <y>0</y>
     <width>1520</width>
-    <height>817</height>
+    <height>828</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1520</width>
+    <height>828</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1520</width>
+    <height>828</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
@@ -434,10 +452,10 @@
             <widget class="QWidget" name="horizontalLayoutWidget_2">
              <property name="geometry">
               <rect>
-               <x>30</x>
-               <y>530</y>
+               <x>60</x>
+               <y>410</y>
                <width>431</width>
-               <height>131</height>
+               <height>111</height>
               </rect>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="5,2">
@@ -496,20 +514,20 @@
             <widget class="QVideoWidget" name="widget_ubuntu" native="true">
              <property name="geometry">
               <rect>
-               <x>10</x>
-               <y>10</y>
-               <width>1011</width>
-               <height>501</height>
+               <x>60</x>
+               <y>20</y>
+               <width>891</width>
+               <height>381</height>
               </rect>
              </property>
             </widget>
             <widget class="QWidget" name="horizontalLayoutWidget">
              <property name="geometry">
               <rect>
-               <x>490</x>
-               <y>530</y>
+               <x>520</x>
+               <y>410</y>
                <width>431</width>
-               <height>80</height>
+               <height>71</height>
               </rect>
              </property>
              <layout class="QHBoxLayout" name="horizontalLayout_6">
@@ -764,13 +782,6 @@ p, li { white-space: pre-wrap; }
                     </property>
                    </widget>
                   </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButton_pf_grade">
-                    <property name="text">
-                     <string>查看成绩</string>
-                    </property>
-                   </widget>
-                  </item>
                  </layout>
                 </item>
                 <item>
@@ -951,8 +962,8 @@ p, li { white-space: pre-wrap; }
               <rect>
                <x>40</x>
                <y>330</y>
-               <width>75</width>
-               <height>23</height>
+               <width>101</width>
+               <height>41</height>
               </rect>
              </property>
              <property name="text">
@@ -1028,12 +1039,29 @@ p, li { white-space: pre-wrap; }
    </property>
    <widget class="QMenu" name="menu">
     <property name="title">
-     <string>仿人足球机器人课程</string>
+     <string>菜单</string>
     </property>
+    <addaction name="actionmainWindow"/>
+    <addaction name="action_upload"/>
    </widget>
    <addaction name="menu"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionUpload">
+   <property name="text">
+    <string>Upload</string>
+   </property>
+  </action>
+  <action name="actionmainWindow">
+   <property name="text">
+    <string>主界面</string>
+   </property>
+  </action>
+  <action name="action_upload">
+   <property name="text">
+    <string>上传成绩</string>
+   </property>
+  </action>
  </widget>
  <customwidgets>
   <customwidget>

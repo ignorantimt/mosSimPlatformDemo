@@ -5,11 +5,16 @@ from PyQt5 import QtWidgets, QtWebEngineWidgets
 from mainWindow import Ui_MainWindow
 
 from PyQt5.QtMultimedia import QMediaPlayer, QMediaContent
-from PyQt5.QtCore import QUrl, QTimer
+from PyQt5.QtCore import QUrl, Qt
 from PyQt5.QtGui import QPixmap
-from PyQt5.QtWidgets import QWidget
+# from PyQt5.QtWidgets import QWidget
+
+from ilabx_api import ApiConfig
+from upload_dialog import UploadDialog
 
 from walking_sample import walking_sim_demo
+
+from control import matlab, c2d, dare
 
 class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None):
@@ -26,8 +31,8 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         self.label_descr.setText(self.label_descrs[0])
         self.setLayoutStretch(self.verticalLayout, [1,6,0])
 
-        self.showPic('./resource/logo/MOS.png', self.label_MOS)
-        self.showPic('./resource/logo/THU.png', self.label_THU)
+        self.showPic('./resource/logo/MOS.png', self.label_MOS, True, True)
+        self.showPic('./resource/logo/THU.png', self.label_THU, True, True)
         self.label_depend.setStyleSheet('color: red; font-weight: bold')
 
         self.operations = {
@@ -62,6 +67,15 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # Lab 13
         self.pushButton_run_sim.clicked.connect(self.run_simulation)
+
+        # Upload
+        self.action_upload.triggered.connect(self.open_upload_dialog)
+        # 设置API配置信息
+        self.api_config = ApiConfig(
+            api_base='你的API基础地址',
+            appid='你的APPID',
+            secret='你的密钥'
+        )
         
         
     def update_title(self, item):
@@ -75,7 +89,7 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
         if index == 0:
             self.setLayoutStretch(self.verticalLayout, [1,6,0])
         else:
-            self.setLayoutStretch(self.verticalLayout, [1,2,10])
+            self.setLayoutStretch(self.verticalLayout, [1,2,15])
             if index in self.operations:
                 operation = self.operations[index]
                 fileType = 'mp4' if operation == self.playVideo else 'pdf'
@@ -93,9 +107,15 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
                 self.showPic('./resource/Lab10.png', self.label_lab10_img)
                 
 
-    def showPic(self, picPath, widget, scaled = True):
+    def showPic(self, picPath, widget, scaled = True, transP = True):
         ImgPath = os.path.abspath(picPath)
         pixmap = QPixmap(ImgPath)
+
+        if transP:
+            # 将白色背景变为透明的
+            mask = pixmap.createMaskFromColor(Qt.white, Qt.MaskInColor)
+            pixmap.setMask(mask)
+
         widget.setPixmap(pixmap)
         widget.setScaledContents(scaled)
         
@@ -188,6 +208,11 @@ class MyMainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
 
         # 调用walking_sim_demo函数，并传入收集的值
         walking_sim_demo(speed_value, target_x_value, target_y_value, target_theta_value)
+
+    def open_upload_dialog(self):
+        # 创建并显示上传对话框
+        self.upload_dialog = UploadDialog(self)
+        self.upload_dialog.exec_()
 
 if __name__ == "__main__":
     import sys
