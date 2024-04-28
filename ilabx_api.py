@@ -98,8 +98,10 @@ def extract_ticket(url: str) -> str:
     parsed_url = urllib.parse.urlparse(url)
 
     query_params = urllib.parse.parse_qs(parsed_url.query)
+    # print(f"query params: {query_params}")
 
     ticket_params = query_params.get("ticket")
+    # print(f"ticket params: {ticket_params}")
 
     if ticket_params is None:
         raise ValueError("Ticket not found.")
@@ -127,7 +129,8 @@ def get_token(ticket: str, api_config: ApiConfig) -> GetTokenResponse | ErrorRes
 
     signature = calculate_signature(ticket, api_config)
 
-    url = urllib.parse.urljoin(api_config["api_base"], "token")
+    url = urllib.parse.urljoin(api_config["api_base"], "open/api/v2/token")
+    # print(f"url: {url}")
 
     response = requests.get(
         url,
@@ -137,8 +140,10 @@ def get_token(ticket: str, api_config: ApiConfig) -> GetTokenResponse | ErrorRes
             "signature": signature,
         },
     )
+    # print(f"response: {response}")
+    # print(f"{response.status_code}")
 
-    return response.json()
+    return response.status_code, response.json()
 
 
 def post_data_upload(
@@ -155,7 +160,8 @@ def post_data_upload(
         Response from server.
     """
 
-    url = urllib.parse.urljoin(api_base, "data_upload")
+    url = urllib.parse.urljoin(api_base, "open/api/v2/data_upload")
+    print(f"url: {url}")
 
     encoded_payload = json.dumps(payload).encode("utf-8")
 
@@ -169,4 +175,4 @@ def post_data_upload(
 
     print(payload)
 
-    return response.json()
+    return response.status_code
